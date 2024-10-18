@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #242424;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #d4d4cc;
+    display: block;
+    padding-left: 20px;
+    line-height: 80px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #a354a0a5;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #242424;
+    border: 1px solid #979797;
+    color: white;
+    position: relative;
+}
+
+.fa-magnifying-glass {
+    width: 40px;
+    top: 7px;
+    left: 0px;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    color: #979797;
+    background: transparent;
+}
+
+.form-control {
+    width: 250px;
+    height: 35px;
+    border: none;
+    margin-left: 30px;
+    border-radius: 0 10px 10px 0;
+    background: transparent;
+    color: white;
+    padding-left: 15px;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background: transparent;
+    border: 3px solid turquoise;
+    color: white;
+}
+
+.btn:last-child {
+    margin-left: 10px;
+}
+
+.sign-up {
+    border-color: #f5cf49;
+    transition: 0.3s;
+}
+
+.sign-up:hover {
+    background-color: #f5cf49;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login {
+    border-color: #884885;
+    transition: 0.3s;
+}
+
+.login:hover {
+    background-color: #884885;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.page {
+    transition: 0.3s;
+}
+
+.page .navbar-nav .nav-item .nav-link:hover {
+    color: #f5cf49;
+}
+
+.display-section {
+    width: 100%;
+    height: 500px;
+}
+
+.center-section {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    background-color: #111111;
+    border-radius: 10px;
+}
+
+.summary-section {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-9 {
+    width: 73%;
+    height: 100%;
+}
+
+.col-3 {
+    width: 25%;
+    height: 100%;
+}
+
+.col-2 {
+    width: 15%;
+    height: 100%;
+}
+
+.col-6 {
+    width: 50%;
+    height: 100%;
+}
+
+.col-9 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: #111111;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    transition: 0.3s;
+    border-bottom: 1px solid #707070;
+}
+
+.sidebar a:hover {
+    background-color: #a354a0a5;
+    color: #ddcf49;
+}
+
+.instruction {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    color: white;
+}
+
+.inner {
+    width: 100%;
+    height: 60%;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.instruction p {
+    width: 80%;
+    height: 60%;
+
+}
+
+.instruction span {
+    color: #f4cd48;
+}
+
+.server-side {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.server {
+    color: white;
+    padding: 10px 20px;
+    background-color: #616161;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.server:hover {
+    background-color: #f4cf47;
+}
+
+.server-active {
+    background-color: #f4cf47;
+}
+
+.server-group {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.server-group p {
+    line-height: 40px;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.download-group {
+    margin-top: 30px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left: 1px solid white;
+}
+
+.download button {
+    padding: 15px 35px;
+    font-size: 20px;
+    background-color: #242424;
+    border: 2px solid #f4cf47;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.download button:hover {
+    background-color: #f4cf47;
+}
+
+.trailer {
+    width: 100%;
+    height: 100%;
+}
+
+.trailer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summary {
+    padding-left: 20px;
+}
+
+.summary i {
+    color: #919191;
+}
+
+.summary h3 {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.summary h4 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.summary p {
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.playlist {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.fa-plus {
+    position: absolute;
+    font-size: 15px;
+    top: 13px;
+    right: 5px;
+}
+
+.detail p {
+    color: white;
+    font-size: 14px;
+}
+
+.detail h4 {
+    font-size: 20px;
+}
+
+.detail span {
+    font-size: 14px;
+    color: #f4cf47;
+}
+
+.rating {
+    width: 67%;
+    height: 100%;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #a958a5;
+    transition: 0.3s;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #4f188b;
+}
